@@ -1,0 +1,6 @@
+1. usertrap in kernel/trap.c
+2. p->trapframe->a7 = 7, the number of the syscall exec
+3. 0x200000022 In the sstaus the SIE bit and SPIE bit are on and UXL=2
+4. lw	s2,0(zero); s2 corresponds to the variable num
+5. that is because the address 0 is not mapped in the kernel address space and we get also in scause the error of page fauld 0xd
+6. the name is initcode and the pid is 1
