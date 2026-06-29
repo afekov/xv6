@@ -1,0 +1,6 @@
+1.sys_sbrk we can save also sz and it would be faster, but we need to update the size with each call
+2. page zero contain readable and executable content that the user have access to
+    page 2 is not executable and not available for the user
+    yes the the user and valid bit is on and the permissions are rw-
+    the contain only readable content for the user
+
